@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://example.com/product.schema.json",
-    "title": "Pulu Data TheThingsNetwork v1.4",
+    "title": "Pulu Data TheThingsNetwork v1.5",
     "description": "In this JSON object you will see the data for the Pulu project.",
     "type": "object",
     "properties": {
@@ -22,7 +22,8 @@
                         "type": "integer"
                     }
                 },
-                "required": [ "value" ]
+                "required": [ "value" ],
+                "additionalProperties": false
             },
             "temperature": {
                 "description": "Object that has the value of the temperature sensors.",
@@ -41,7 +42,8 @@
                                 "type": "integer"
                             }
                         },
-                        "required": [ "value" ]
+                        "required": [ "value" ],
+                        "additionalProperties": false
                     },
                     "ground": {
                         "description": "Object that has the value of the ground temperature sensor.",
@@ -56,10 +58,12 @@
                                 "type": "integer"
                             }
                         },
-                        "required": [ "value" ]
+                        "required": [ "value" ],
+                        "additionalProperties": false
                     }
                 },
-                "required": ["air", "ground"]
+                "required": ["air", "ground"],
+                "additionalProperties": false
             },
             "moisture": {
                 "description": "Object that has the value of the moisture sensors.",
@@ -78,7 +82,8 @@
                                 "type": "integer"
                             }
                         },
-                        "required": [ "value" ]
+                        "required": [ "value" ],
+                        "additionalProperties": false
                     },
                     "level2": {
                         "description": "Object that has the value of the level2 moisture sensor.",
@@ -93,7 +98,8 @@
                                 "type": "integer"
                             }
                         },
-                        "required": [ "value" ]
+                        "required": [ "value" ],
+                        "additionalProperties": false
                     },
                     "level3": {
                         "description": "Object that has the value of the level3 moisture sensor.",
@@ -108,7 +114,8 @@
                                 "type": "integer"
                             }
                         },
-                        "required": [ "value" ]
+                        "required": [ "value" ],
+                        "additionalProperties": false
                     },
                     "level4": {
                         "description": "Object that has the value of the level4 moisture sensor.",
@@ -123,7 +130,8 @@
                                 "type": "integer"
                             }
                         },
-                        "required": [ "value" ]
+                        "required": [ "value" ],
+                        "additionalProperties": false
                     },
                     "level5": {
                         "description": "Object that has the value of the level5 moisture sensor.",
@@ -138,7 +146,8 @@
                                 "type": "integer"
                             }
                         },
-                        "required": [ "value" ]
+                        "required": [ "value" ],
+                        "additionalProperties": false
                     },
                     "level6": {
                         "description": "Object that has the value of the level6 moisture sensor.",
@@ -153,7 +162,8 @@
                                 "type": "integer"
                             }
                         },
-                        "required": [ "value" ]
+                        "required": [ "value" ],
+                        "additionalProperties": false
                     },
                     "level7": {
                         "description": "Object that has the value of the level7 moisture sensor.",
@@ -168,7 +178,8 @@
                                 "type": "integer"
                             }
                         },
-                        "required": [ "value" ]
+                        "required": [ "value" ],
+                        "additionalProperties": false
                     },
                     "level8": {
                         "description": "Object that has the value of the level8 moisture sensor.",
@@ -183,7 +194,8 @@
                                 "type": "integer"
                             }
                         },
-                        "required": [ "value" ]
+                        "required": [ "value" ],
+                        "additionalProperties": false
                     }
                 },
                 "required": ["level1" , "level2" , "level3" , "level4" , "level5" , "level6" , "level7" , "level8"]
@@ -201,12 +213,15 @@
                         "type": "integer"
                     }
                 },
-                "required": [ "value" ]
+                "required": [ "value" ],
+                "additionalProperties": false
             }
         },
-        "required": ["moisture", "temperature", "light", "battery"]
+        "required": ["moisture", "temperature", "light", "battery"],
+        "additionalProperties": false
       }
     },
-    "required": ["sensors"]
+    "required": ["sensors"],
+    "additionalProperties": false
   }
 
