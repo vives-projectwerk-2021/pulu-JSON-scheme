@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://example.com/product.schema.json",
-    "title": "Pulu Data TheThingsNetwork v1.5",
+    "title": "Pulu Data TheThingsNetwork v2.0",
     "description": "In this JSON object you will see the data for the Pulu project.",
     "type": "object",
     "properties": {
@@ -15,7 +15,9 @@
                 "properties": {
                     "value":{
                         "description":"Has the value of the light sensor.",
-                        "type":"integer"
+                        "type":"integer",
+                        "minimum": 0,
+                        "maximum": 1000
                     },
                     "status":{
                         "description": "Has status codes of the light sensor. When there is 0 in the data it's representing no data send",
@@ -35,7 +37,9 @@
                         "properties": {
                             "value": {
                                 "description": "Has the value of the air temperature sensor.",
-                                "type": "integer"
+                                "type": "integer",
+                                "minimum": 17,
+                                "maximum": 27
                             },
                             "status":{
                                 "description": "Has status codes of the air temperature sensor. When there is 0 in the data it's representing no data send",
@@ -51,7 +55,9 @@
                         "properties": {
                             "value": {
                                 "description": "Has the value of the gorund temperature sensor.",
-                                "type": "integer"
+                                "type": "integer",
+                                "minimum": 17,
+                                "maximum": 27
                             },
                             "status":{
                                 "description": "Has status codes of the ground temperature sensor. When there is 0 in the data it's representing no data send",
@@ -75,7 +81,9 @@
                         "properties": {
                             "value": {
                                 "description": "Has the value of the level1 moisture sensor.",
-                                "type": "integer"
+                                "type": "integer",
+                                "minimum": 0,
+                                "maximum": 100
                             },
                             "status":{
                                 "description": "Has status codes of the level1 moisture sensor. When there is 0 in the data it's representing no data send",
@@ -91,7 +99,9 @@
                         "properties": {
                             "value": {
                                 "description": "Has the value of the level2 moisture sensor.",
-                                "type": "integer"
+                                "type": "integer",
+                                "minimum": 0,
+                                "maximum": 100
                             },
                             "status":{
                                 "description": "Has status codes of the level2 moisture sensor. When there is 0 in the data it's representing no data send",
@@ -107,7 +117,9 @@
                         "properties": {
                             "value": {
                                 "description": "Has the value of the level3 moisture sensor.",
-                                "type": "integer"
+                                "type": "integer",
+                                "minimum": 0,
+                                "maximum": 100
                             },
                             "status":{
                                 "description": "Has status codes of the level3 moisture sensor. When there is 0 in the data it's representing no data send",
@@ -123,7 +135,9 @@
                         "properties": {
                             "value": {
                                 "description": "Has the value of the level4 moisture sensor.",
-                                "type": "integer"
+                                "type": "integer",
+                                "minimum": 0,
+                                "maximum": 100
                             },
                             "status":{
                                 "description": "Has status codes of the level4 moisture sensor. When there is 0 in the data it's representing no data send",
@@ -139,7 +153,9 @@
                         "properties": {
                             "value": {
                                 "description": "Has the value of the level5 moisture sensor.",
-                                "type": "integer"
+                                "type": "integer",
+                                "minimum": 0,
+                                "maximum": 100
                             },
                             "status":{
                                 "description": "Has status codes of the level5 moisture sensor. When there is 0 in the data it's representing no data send",
@@ -155,7 +171,9 @@
                         "properties": {
                             "value": {
                                 "description": "Has the value of the level6 moisture sensor.",
-                                "type": "integer"
+                                "type": "integer",
+                                "minimum": 0,
+                                "maximum": 100
                             },
                             "status":{
                                 "description": "Has status codes of the level6 moisture sensor. When there is 0 in the data it's representing no data send",
@@ -171,7 +189,9 @@
                         "properties": {
                             "value": {
                                 "description": "Has the value of the level7 moisture sensor.",
-                                "type": "integer"
+                                "type": "integer",
+                                "minimum": 0,
+                                "maximum": 100
                             },
                             "status":{
                                 "description": "Has status codes of the level7 moisture sensor. When there is 0 in the data it's representing no data send",
@@ -187,7 +207,9 @@
                         "properties": {
                             "value": {
                                 "description": "Has the value of the level8 moisture sensor.",
-                                "type": "integer"
+                                "type": "integer",
+                                "minimum": 0,
+                                "maximum": 100
                             },
                             "status":{
                                 "description": "Has status codes of the level8 moisture sensor. When there is 0 in the data it's representing no data send",
@@ -206,7 +228,9 @@
                 "properties": {
                     "value": {
                         "description": "Has the battery level of the pulu device in percentage. (0 - 100)",
-                        "type": "integer"
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 100
                     },
                     "status":{
                         "description": "Has status codes for the battery of the pulu device. When there is 0 in the data it's representing no data send.",
