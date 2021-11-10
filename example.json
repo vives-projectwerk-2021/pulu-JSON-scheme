@@ -1,8 +1,10 @@
 {
     "sensors": {
-      "battery": {
-        "value": 100,
-        "status": 1
+      "voltage": {
+        "battery": {
+          "value": 63,
+          "status": 1
+        }
       },
       "light": {
         "value": 203,

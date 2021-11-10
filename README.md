@@ -25,3 +25,7 @@ Below you see all the things that have been changed in the different versions of
 ### V2.0
 
 * Added control over the values. Minimum and maximum values.
+
+### V2.1
+
+* Small change to make the object a little clearer

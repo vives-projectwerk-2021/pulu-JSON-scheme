@@ -222,26 +222,34 @@
                 },
                 "required": ["level1" , "level2" , "level3" , "level4" , "level5" , "level6" , "level7" , "level8"]
             },
-            "battery": {
+            "voltage": {
                 "description": "Object that has the value of the battery",
                 "type": "object",
                 "properties": {
-                    "value": {
-                        "description": "Has the battery level of the pulu device in percentage. (0 - 100)",
-                        "type": "integer",
-                        "minimum": 0,
-                        "maximum": 100
-                    },
-                    "status":{
-                        "description": "Has status codes for the battery of the pulu device. When there is 0 in the data it's representing no data send.",
-                        "type": "integer"
+                    "battery": {
+                        "description": "Object that has the value of the level3 moisture sensor.",
+                        "type": "object",
+                        "properties": {
+                            "value": {
+                                "description": "Has the value of the level3 moisture sensor.",
+                                "type": "integer",
+                                "minimum": 0,
+                                "maximum": 100
+                            },
+                            "status":{
+                                "description": "Has status codes of the level3 moisture sensor. When there is 0 in the data it's representing no data send",
+                                "type": "integer"
+                            }
+                        },
+                        "required": [ "value" ],
+                        "additionalProperties": false
                     }
                 },
-                "required": [ "value" ],
+                "required": [ "battery" ],
                 "additionalProperties": false
             }
         },
-        "required": ["moisture", "temperature", "light", "battery"],
+        "required": ["moisture", "temperature", "light", "voltage"],
         "additionalProperties": false
       }
     },
