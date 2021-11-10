@@ -26,22 +26,6 @@
         "level4": {
           "value": 78,
           "status": 1
-        },
-        "level5": {
-          "value": 58,
-          "status": 1
-        },
-        "level6": {
-          "value": 36,
-          "status": 1
-        },
-        "level7": {
-          "value": 79,
-          "status": 1
-        },
-        "level8": {
-          "value": 54,
-          "status": 1
         }
       },
       "temperature": {

@@ -32,4 +32,8 @@ Below you see all the things that have been changed in the different versions of
 
 ### V2.1
 
-* Small change to make the object a little clearer
+* Small change to make the object a little clearer.
+
+### V2.2
+
+* Changed the amount of moisture sensors to 4 instead of 8.
