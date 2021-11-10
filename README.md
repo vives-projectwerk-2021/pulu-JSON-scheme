@@ -8,7 +8,11 @@ This JSON schema will check if the JSON object that comes from TheThingsNetwork 
 
 ## Structure of JSON object
 
-Here will come the structure of the object you need to have a succesfull verification.
+First we will have a main attribute that names "sensors". In this attribute you will find all the information of the sensors. This will have several sub-attributes with specific values in it. We have four different attributes that each correspond to a specific TYPE of sensor. The different types we have are moisture, light, voltage and temperature. Within these types we will find every individual sensor of the project. Each sensor has two attributes. One that has the value of the sensor in it and one that has a status code in it. The status attribute is not necessary for the JSON schema.
+
+## Status codes
+
+The status codes aren't implemented yet. For the moment we don't send a status for each sensor.
 
 ## Changelogs
 
