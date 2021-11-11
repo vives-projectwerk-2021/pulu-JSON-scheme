@@ -1,7 +1,5 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://example.com/product.schema.json",
-    "title": "Pulu Data TheThingsNetwork v2.0",
+    "title": "Pulu Data TheThingsNetwork v2.2",
     "description": "In this JSON object you will see the data for the Pulu project.",
     "type": "object",
     "properties": {
