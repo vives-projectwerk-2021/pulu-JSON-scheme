@@ -155,17 +155,17 @@
                 "type": "object",
                 "properties": {
                     "battery": {
-                        "description": "Object that has the value of the level3 moisture sensor.",
+                        "description": "Object that has the level of the voltage.",
                         "type": "object",
                         "properties": {
                             "value": {
-                                "description": "Has the value of the level3 moisture sensor.",
+                                "description": "Has the level of the voltage.",
                                 "type": "integer",
                                 "minimum": 0,
                                 "maximum": 100
                             },
                             "status":{
-                                "description": "Has status codes of the level3 moisture sensor. When there is 0 in the data it's representing no data send",
+                                "description": "Has status codes for the battery. When there is 0 in the data it's representing no data send",
                                 "type": "integer"
                             }
                         },
