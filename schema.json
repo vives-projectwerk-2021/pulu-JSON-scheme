@@ -1,5 +1,5 @@
 {
-    "title": "Pulu Data TheThingsNetwork v2.2",
+    "title": "Pulu Data TheThingsNetwork v2.3",
     "description": "In this JSON object you will see the data for the Pulu project.",
     "type": "object",
     "properties": {
@@ -35,9 +35,9 @@
                         "properties": {
                             "value": {
                                 "description": "Has the value of the air temperature sensor.",
-                                "type": "integer",
-                                "minimum": 17,
-                                "maximum": 27
+                                "type": "number",
+                                "minimum": -55,
+                                "maximum": 125
                             },
                             "status":{
                                 "description": "Has status codes of the air temperature sensor. When there is 0 in the data it's representing no data send",
@@ -53,9 +53,9 @@
                         "properties": {
                             "value": {
                                 "description": "Has the value of the gorund temperature sensor.",
-                                "type": "integer",
-                                "minimum": 17,
-                                "maximum": 27
+                                "type": "number",
+                                "minimum": -55,
+                                "maximum": 125
                             },
                             "status":{
                                 "description": "Has status codes of the ground temperature sensor. When there is 0 in the data it's representing no data send",

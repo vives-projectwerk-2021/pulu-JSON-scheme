@@ -37,3 +37,7 @@ Below you see all the things that have been changed in the different versions of
 ### V2.2
 
 * Changed the amount of moisture sensors to 4 instead of 8.
+
+### V2.3
+
+* Changed the minimum and maximum values of temperature sensors to match real values of datasheet.

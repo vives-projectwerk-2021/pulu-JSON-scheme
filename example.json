@@ -30,11 +30,11 @@
       },
       "temperature": {
         "air": {
-          "value": 25,
+          "value": 23.654,
           "status": 1
         },
         "ground": {
-          "value": 22,
+          "value": 21.584,
           "status": 1
         }
       }
